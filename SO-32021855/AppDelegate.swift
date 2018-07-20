@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SO-32021855
 //
-//  Copyright © 2017 Xavier Schott
+//  Copyright © 2017, 2018 Xavier Schott
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
 //  in the Software without restriction, including without limitation the rights
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MixpanelDelegate, SKPayme
                 queue.finishTransaction(transation)
                 // Track here...
 
-                Mixpanel.sharedInstance().track("Purchased",
+                Mixpanel.sharedInstance()?.track("Purchased",
                                                 properties: ["productIdentifier":transation.payment.productIdentifier])
             case .purchasing: break
             case .restored: break
