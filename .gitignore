@@ -14,7 +14,7 @@ dsa_priv.pem
 
 # Xcode 4
 xcuserdata/
-project.xcworkspace/
+*.xcworkspace/
 DerivedData/
 
 # Generated files
